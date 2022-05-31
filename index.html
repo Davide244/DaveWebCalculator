@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davids Taschenrechner</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript" src="js/Main.js"></script>
+</head>
+<body>
+    <div class="settingspage" id="settingsPage">Settings<br>
+        <table style="height:94%;" cellspacing="0";>
+            <tr style="height:10%; width:90%;">
+                <td id="settingsItem" class="settingsitem"><label class="settingsSliderLabel" for="settingsSlider"><div id="settingsSliderLabel">Result Rounding: 6</div><br><img src="res/Help_Symbol.svg" title="Sets the limit for result rounding." class="helpSymbol"></label><input id="RoundSettingsSlider" class="settingsSlider" style="margin: 0rem;" type="range" min="1" max="15" value="6" step="1"></td>
+            </tr>
+            <tr style="height:10%; width:90%;">
+                <td id="settingsItem" class="settingsitem" style="background-color: rgb(27, 24, 29);"><input class="settingsCheckbox" type="checkbox" id="roundingCheckbox"> Disable decimal places (Result Only)</td>
+            </tr>
+            <tr style="height:10%; width:90%;">
+                <td id="settingsItem" class="settingsitem" id="settingsItem"><input class="settingsCheckbox" type="checkbox" disabled="true"> Show extra operations (May cram space)
+                    <div class="comingSoon">COMING SOON</div>
+                </td>
+            </tr>
+            <tr style="height:10%; width:90%;">
+                <td id="settingsItem" class="settingsitem" style="background-color: rgb(27, 24, 29);"></td>
+            </tr>
+            <tr style="height:10%; width:90%;">
+                <td id="settingsItem" class="settingsitem" id="settingsItem"></td>
+            </tr>
+            <tr style="height:10%; width:90%;">
+                <td id="settingsItem" class="settingsitem" style="background-color: rgb(27, 24, 29);"></td>
+            </tr>
+            <tr style="height:10%; width:90%;">
+                <td id="settingsItem" class="settingsitem"></td>
+            </tr>
+        </table>
+    </div>
+    <table class="p_procarea" cellspacing="0">
+        <tr>
+            <!--td style="width:15%;" id="procAreaParent">
+                <div style="height:100%; width: 100%;">
+                    <table style="height:100%;" cellspacing="0">
+                        <tr class="historytr">
+                            <td class="historytd">Test</td>
+                        </tr>
+                        <tr class="historytr">
+                            <td class="historytd">Test</td>
+                        </tr>
+                        <tr class="historytr">
+                            <td class="historytd">HISTORY COMING SOON</td>
+                        </tr>
+                        <tr class="historytd">
+                            <td class="historytd">Test</td>
+                        </tr>
+                        <tr class="historytd">
+                            <td class="historytd">Test</td>
+                        </tr>
+                    </table>
+                </div>
+            </td!-->
+            <td style="width:85%;" id="procAreaParent">
+                <input id="procArea"><button onclick="ToggleSettings()" class="settingsbtn" id="settingsbtn"><img class="settingsimg" src="res/settings.svg"></button></input>
+            </td>
+        </tr>
+    </table>
+        <table cellspacing="0">
+            <tr>
+                <td id="(">(</td>
+                <td id=")">)</td>
+                <td id="**">^</td>
+                <td id="DEL" class="op">DEL</td>
+            </tr>
+            <tr>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                <td id="3">3</td>
+                <td id="/" class="op">/</td>
+            </tr>
+            <tr>
+                <td id="4">4</td>
+                <td id="5">5</td>
+                <td id="6">6</td>
+                <td id="*" class="op">*</td>
+            </tr>
+            <tr>
+                <td id="7">7</td>
+                <td id="8">8</td>
+                <td id="9">9</td>
+                <td id="-" class="op">-</td>
+            </tr>
+            <tr>
+                <td id="Clr">Clr</td>
+                <td id="0">0</td>
+                <td id=".">,</td>
+                <td id="+" class="op">+</td>
+            </tr>
+            <tr>
+                <td id="sin(" class="op">sin()</td>
+                <td id="sqrt(" class="op">√</td>
+                <td id="π" class="op">π</td>
+                <td id="=" class="calc">=</td>
+            </tr>
+        </table>
+</body>
+</html>
